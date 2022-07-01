@@ -1,0 +1,50 @@
+.hello-world{
+    color: purple;
+}
+
+.size-10 {
+    font-size: 10px;
+}
+
+.size-20 {
+    font-size: 20px;
+}
+
+.size-30 {
+    font-size: 30px;
+}
+
+.employee-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding:15px;
+    max-width: 275px;
+    border-style: solid;
+    border-radius: 15px;
+    background-color: #a1a1a1;
+}
+
+.name-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #cb7afa;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.name{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.item-wrapper{
+    padding: 15px;
+    color: white;
+}
+
+.heading{
+    margin-right: 15px;
+    color: white;
+}

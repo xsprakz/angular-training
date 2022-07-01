@@ -1,0 +1,59 @@
+
+    <!-- <p [ngStyle]="{'color': color}"> Kulayan mo ang mundo ko ~</p>
+    <input [(ngModel)]="color"/>
+
+<br>
+
+    <p [ngClass]="isBig ? 'size-20' : 'size-10'">{{isBig}}</p>
+    <button (click)="switchSize()">Baguhin ang laki</button>
+
+
+<br>
+    <p [ngClass]="isBig ? 'size-20' : 'size-10'">{{isBig}}</p>
+    <button (mouseenter)="switchClass()">{{ switchMessage }}</button>
+
+<br>
+<br>
+
+    <p *ngIf ="isDisplayed">Kita mo ang halaga mo !</p>
+    <button (click)="switchDisplay()">{{ isDisplayed ? 'Itago mo ako' : 'Ipakita ang dapat ipakita'}}</button>
+
+<br>
+
+    <input [(ngModel)]="message"/>
+    <p class="hello=world">{{ message }}</p>
+
+<br>
+
+    <input [(ngModel)]="alertMessage"/>
+    <button (click)="displayAlert(alertMessage)">Za Wardoooo !</button> -->
+
+    <p>Name:</p>
+    <input [(ngModel)]="name" />
+
+    <p>Title:</p>
+    <input [(ngModel)]="title" />
+
+    <p>Gender:</p>
+    <input [(ngModel)]="gender" />
+
+    <p>Tenure:</p>
+    <input [(ngModel)]="tenure" />
+
+    <p>Salary:</p>
+    <input [(ngModel)]="salary" />
+
+    <p>Display:</p>
+    <input [(ngModel)]="display" type="checkbox" checked />
+
+    <br>
+
+    <button (click)="addEmployee(name, title, gender, tenure, salary, display, edited)">Add Employee</button>
+    <div *ngFor="let employee of employees; let i = index;">
+        <div *ngIf="employee.display">
+            <app-employee [employee]="employee"></app-employee>
+        </div>
+        <button (click)="updateEmployee(i, name, title, gender, tenure, salary, display, edited)">Update Employee</button>
+        <button (click)="deleteEmployee(i)">Delete Employee</button>
+    </div>
+    
